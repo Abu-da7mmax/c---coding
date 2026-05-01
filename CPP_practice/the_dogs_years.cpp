@@ -1,5 +1,5 @@
 #include <iostream>
-
+using namespace std;
 int main () {
 
 int dog_age = 0;
@@ -8,7 +8,7 @@ std::cout << "Enter the dog's age: ";
 std::cin >> dog_age;
 
 if (dog_age < 0) {
-    std::cout << "Age cannot be negative." << std::endl;
+    cout << "Age cannot be negative." << std::endl;
 } else if (dog_age == 0) {
     std::cout << "The dog is a newborn." << std::endl;
 } else if (dog_age == 1) {
