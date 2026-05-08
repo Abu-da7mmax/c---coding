@@ -5,8 +5,8 @@ int main() {
    
 string s;
 
-cin >> s;
-cout << " are we for real?";
+getline(cin, s);
+cout << s << " are we for real?";
 
 
     return 0;
