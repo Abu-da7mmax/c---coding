@@ -7,7 +7,7 @@ int main() {
 
   srand(time(NULL));
 
-  int choice = std::rand() % 20;
+  int choice = std::rand() % 70;
    std::cout << choice << "\n";
 
    // start of the if-else statements
