@@ -1,17 +1,30 @@
 #include <iostream>
 using namespace std;
-// function prototype using void defined and takes two int types as parameters to create an operation calculator
-void calculator( int num1, int num2){
+// Interactive calculator: reads two numbers and an operator from the user
+void calculator() {
+    int num1, num2;
+    char op;
 
-cin >> num1 >> num2;
+    cout << "Enter expression like 5 + 10: ";
+    cin >> num1 >> op >> num2;
 
-cout << num1 + num2 << "\n";
-cout << num1 - num2 << "\n";
-cout << num1 * num2 << "\n";
-cout << num1 / num2 << "\n";
+    if (op == '+') {
+        cout << num1 + num2 << "\n";
+    } else if (op == '-') {
+        cout << num1 - num2 << "\n";
+    } else if (op == '*') {
+        cout << num1 * num2 << "\n";
+    } else if (op == '/') {
+        if (num2 == 0) {
+            cout << "Cannot divide by zero" << "\n";
+        } else {
+            cout << num1 / num2 << "\n";
+        }
+    } else {
+        cout << "Invalid operation" << "\n";
+    }
 }
-
 int main () {
-     calculator(5, 10);
+    calculator();
     return 0;
 }
