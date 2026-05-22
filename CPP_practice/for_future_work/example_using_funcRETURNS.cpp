@@ -8,7 +8,14 @@ int main() {
   std::cout << "Hello. IT.\n";
   std::cout << "Have you tried turning it off and on again? y/n\n";
   std::cin >> on_off_attempt;
-  
+  if (on_off_attempt == "y") {
+    std::cout << "Did that fix the problem? y/n\n";
+    std::cin >> on_off_attempt;
+    if (on_off_attempt == "y") {
+      std::cout << "Great! Glad I could help.\n";
+      return 0;
+    }
+  }
   // Check in with Jenn
   std::cout << "Oh hi Jen!\n";
   
