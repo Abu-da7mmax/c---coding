@@ -1,3 +1,5 @@
+#include <string>
+
 inline
 std::string goodnight1(std::string thing1) {       
          /*here we replaced the declaration to the definition and added the "inline" keyword to it,
