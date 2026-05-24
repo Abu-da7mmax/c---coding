@@ -13,8 +13,7 @@ std::string make_coffee(bool milk, bool sugar) { // Definition
   } else if (sugar) {
     coffee += " with sugar";
   }
-  return coffee + ".\n";
-}
+  return coffee + ".\n";}
 
 int main() {
   

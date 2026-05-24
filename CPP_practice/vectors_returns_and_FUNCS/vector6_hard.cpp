@@ -3,7 +3,9 @@
  
 // Define is_palindrome() here:
 
+
 bool is_palindrome(std::string text) {
+  
   
   std::string reversed_text;
   
