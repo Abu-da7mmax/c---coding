@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
@@ -6,7 +7,7 @@ int main() {
 string s;
 
 getline(cin, s);
-cout << s << " are we for real?";
+cout << s << " nice to meet your acquaintance";
 
 
     return 0;

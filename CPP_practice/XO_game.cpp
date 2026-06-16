@@ -13,7 +13,7 @@ cout << "       ---+---+---\n";
 cout << "        4 | 5 | 6 \n";
 cout << "       ---+---+---\n";
 cout << "        7 | 8 | 9 \n\n";
-vector<char> board(9, ' '); // initialize the board with empty spaces
+vector<char> board(9, ' '); // initialize the board with empty 9 spaces and the size of the board is 9
 return board;
 
 }
@@ -35,10 +35,10 @@ cin >> move;
 
 if (move < 1 || move > 9) {
     cout << "Invalid move. Please enter a number between 1 and 9.\n";
-} else if (board[move - 1] != ' ') {
+} else if (board[move - 1] != ' ') {     // the - 1 is because the board is indexed from 0 to 8 but the user will enter a number from 1 to 9
     cout << "That spot is already taken. Please choose another move.\n";
 } else if(move ==1 || move == 2 || move == 3 || move == 4 || move == 5 || move == 6 || move == 7 || move == 8 || move == 9){
-    board[move - 1] = 'X';
+    board[move - 1] = 'X';               // why not the move -1 alone without the board[] is because the board is a vector and we need to access the element at the index move - 1
     cout << "Player X has made a move at position " << move << ".\n\n";}
 
     
@@ -106,5 +106,5 @@ cin >> move2;
         return 0;
     }  }
 
-        cout << "It's a draw!";
+        cout << "It's a draw!"; // why this is not on the if statement is because we want to check for a draw after all the moves have been made and if there is no winner then it's a draw
     }

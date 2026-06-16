@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
-
+// This is a simple C++ program that prompts the user to enter their name and then compliments it.
 int main() {
 
     string name;
 
-cout << " please enter yo namee: ";
+cout << " please enter your name: ";
 
 cin >> name;
 

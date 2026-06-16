@@ -3,7 +3,7 @@ using namespace std;
 // to understad the symbol '!' 
 int main () {
 
-    int gg = true;
+    int gg = false;
 
     if(!gg) {
         cout << " hi there";

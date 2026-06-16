@@ -1,13 +1,13 @@
 #include <iostream>
 #include <cstdlib>
-
+// This is a simple C++ program that simulates a Magic 8 Ball, which provides random answers to yes-or-no questions.
 int main() {
 
   std::cout << "MAGIC BALL SAYS: \n\n";
 
   srand(time(NULL));
 
-  int choice = std::rand() % 70;
+  int choice = std::rand() % 19; // generates a random number between 0 and 18
    std::cout << choice << "\n";
 
    // start of the if-else statements

@@ -9,7 +9,7 @@ int main() {
   while(i < 10) {
 
     square = i * i;
-    std::cout << i << "   " << square << "\n";
+    std::cout << i << "  the square value of this number is " << square << "\n";
 i++;
     
   }
