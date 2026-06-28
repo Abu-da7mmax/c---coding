@@ -1,7 +1,7 @@
 #include <string>
 #include "night.hpp"
+using namespace std;
 
-
-std::string goodnight2(std::string thing1, std::string thing2) {
+string goodnight2(string thing1, string thing2) {
   return "Goodnight, " + thing1 + " jumping over the " + thing2 + ".\n";
 }

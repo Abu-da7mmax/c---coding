@@ -1,9 +1,10 @@
 #include <string>
+using namespace std;
 
 inline
-std::string goodnight1(std::string thing1) {       
+string goodnight1(string thing1) {       
          /*here we replaced the declaration to the definition and added the "inline" keyword to it,
          which allows us to put the definition in the header file without causing linker errors.*/
   return "Goodnight, " + thing1 + ".\n";            
   
-}std::string goodnight2(std::string thing1, std::string thing2);
+}string goodnight2(string thing1, string thing2);
