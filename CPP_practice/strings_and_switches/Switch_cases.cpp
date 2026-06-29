@@ -51,20 +51,7 @@ break;
 default:
 std:: cout << "fealthy fatass thinkin he is funny GETOUTTA HERE!!!!!!";
 break;
-
-
-
 }
   
-
-  
-  
   return 0;
-  
-  
-  
-  
-  
-  
-  
 }

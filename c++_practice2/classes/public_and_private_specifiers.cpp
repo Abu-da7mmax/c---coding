@@ -16,14 +16,14 @@ void setsalary(double s) {
 double getsalary() {
     return salary;
 }
+
 void print_bonus(){
-    cout << " the bonus is " << salary_bonus() << endl;
+    salary_bonus = salary * 0.1;
+    cout << "the bonus is " << salary_bonus << endl;
 }
 private:
 double salary;
-double salary_bonus(){
-    return salary*0.10;
-}
+double salary_bonus;
 };
 
 
@@ -32,7 +32,7 @@ int main () {
 
     employee e1;
     e1.name = "d7mi";
-    e1.setsalary(5000);
+    e1.setsalary(10000);
     cout << e1.name << " has " << e1.getsalary() << endl;
     e1.print_bonus();
 }
