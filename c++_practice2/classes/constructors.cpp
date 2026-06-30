@@ -7,8 +7,11 @@ class Car{
         string model;
         int year;
         string color;
-
-    Car(string make, string model, int year, string color){ // we put the arguments in the constructor because we want to assign values to the attributes when we create an object of the class
+    Car(){
+     
+    }
+    Car(string make, string model, int year, string color){ /* the constructor is a special method that is automatically called when an object
+   is instantiated. It is useful for assigning values to attributes as arguments */
         this->make = make;
         this->model = model;
         this->year = year;
@@ -26,9 +29,10 @@ int main() {
 
     Car car1("Chevy", "Corvette", 2022, "blue");
     Car car2("Ford", "Mustang", 2023, "red");
-
+    Car car3;
+    car3.make = "ford monster";
     car1.printCARinfo();
     car2.printCARinfo();
-
+    car3.printCARinfo();
     return 0;
 }

@@ -8,9 +8,9 @@ public:
 string name;
 
 void setsalary(double s) {
-    if(s < 0) salary = 0;
-    else
-    salary = s;
+    if(s < 0){ salary = 0; }
+    else{
+        salary = s;}
 }
 
 double getsalary() {
