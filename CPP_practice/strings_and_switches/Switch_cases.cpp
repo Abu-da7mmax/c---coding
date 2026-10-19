@@ -49,7 +49,7 @@ std::cout << "Your weight on Neptune is " << weight * 1.19;
 break;
 
 default:
-std:: cout << "fealthy fatass thinkin he is funny GETOUTTA HERE!!!!!!";
+std:: cout << "GETOUTTA HERE!!!!!!";
 break;
 }
   
